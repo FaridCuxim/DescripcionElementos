@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InfoScrollFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/numAto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Número Atómico"
+                app:layout_constraintTop_toBottomOf="@+id/nom"/>
+
+            <TextView
+                android:id="@+id/valencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Valencia"
+                app:layout_constraintTop_toBottomOf="@+id/numAto"/>
+
+            <TextView
+                android:id="@+id/oxidacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Estado de Oxidación"
+                app:layout_constraintTop_toBottomOf="@+id/valencia"/>
+
+            <TextView
+                android:id="@+id/electronegatividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Electronegatividad"
+                app:layout_constraintTop_toBottomOf="@+id/oxidacion"/>
+
+            <TextView
+                android:id="@+id/rCovalente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Radio Covalente"
+                app:layout_constraintTop_toBottomOf="@+id/electronegatividad"/>
+
+            <TextView
+                android:id="@+id/rIonico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Radio Iónico"
+                app:layout_constraintTop_toBottomOf="@+id/rCovalente"/>
+
+            <TextView
+                android:id="@+id/rAtomico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Radio Atómico"
+                app:layout_constraintTop_toBottomOf="@+id/rIonico"/>
+
+            <TextView
+                android:id="@+id/confElectro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Configuración Electrónica"
+                app:layout_constraintTop_toBottomOf="@+id/rAtomico"/>
+
+            <TextView
+                android:id="@+id/potIonizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Potencial de Ionización"
+                app:layout_constraintTop_toBottomOf="@+id/confElectro"/>
+
+            <TextView
+                android:id="@+id/masa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Masa Atómica"
+                app:layout_constraintTop_toBottomOf="@+id/potIonizacion"/>
+
+            <TextView
+                android:id="@+id/densidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Densidad"
+                app:layout_constraintTop_toBottomOf="@+id/masa"/>
+
+            <TextView
+                android:id="@+id/ebullision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Punto de Ebullición"
+                app:layout_constraintTop_toBottomOf="@+id/densidad"/>
+
+            <TextView
+                android:id="@+id/fusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Punto de Fusión"
+                app:layout_constraintTop_toBottomOf="@+id/ebullision"/>
+
+            <TextView
+                android:id="@+id/descubridor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:text="Descubridor"
+                app:layout_constraintTop_toBottomOf="@+id/fusion"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
