@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Agrupaciones.Halogenos"></activity>
-        <activity
-            android:name=".Descripcion"
-            android:theme="@style/SinActionBar" />
-        <activity android:name=".Agrupaciones.NoMetalesActivity">
+        <activity android:name=".Agrupaciones.Metales_alcalineoTerrreos"></activity>
+        <activity android:name=".Agrupaciones.Metales_alcalinos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Agrupaciones.Halogenos" />
+        <activity
+            android:name=".Descripcion"
+            android:theme="@style/SinActionBar" />
+        <activity android:name=".Agrupaciones.NoMetalesActivity">
+
         </activity>
     </application>
 
